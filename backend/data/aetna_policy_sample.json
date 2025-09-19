@@ -1,0 +1,236 @@
+{
+  "id": "aetna-sample-2025-09-19-83249bc8",
+  "title": "Aetna PPO Silver 2500 \u2014 Policy Certificate \u2014 2025",
+  "source": "Sample Content",
+  "issuer": "Aetna",
+  "edition_date": "2025-01-01",
+  "effective_date": "2025-01-01",
+  "expiration_date": "2025-12-31",
+  "policy_number": "PLN-AXS-529184",
+  "group_number": "GRP-20417",
+  "member_id_example": "Q123456789",
+  "document_type": "policy_certificate",
+  "disclaimer": "Not a real policy; non-binding.",
+  "structured": {
+    "plan": {
+      "name": "Aetna PPO Silver 2500",
+      "type": "PPO",
+      "metal_level": "Silver",
+      "network": "Aetna Open Choice PPO",
+      "policy_number": "PLN-AXS-529184",
+      "group_number": "GRP-20417",
+      "effective_date": "2025-01-01",
+      "expiration_date": "2025-12-31"
+    },
+    "member": {
+      "subscriber_name": "Randall Ridley",
+      "member_id": "Q123456789",
+      "dependents": ["Ava Ridley"]
+    },
+    "cost_sharing_in_network": {
+      "deductible_individual": 2500,
+      "deductible_family": 5000,
+      "oop_max_individual": 8500,
+      "oop_max_family": 17000,
+      "coinsurance_pct": 0.2,
+      "copays": {
+        "pcp": 25,
+        "specialist": 50,
+        "urgent_care": 75,
+        "er": 350,
+        "lab": 10,
+        "behavioral_health_outpatient": 25,
+        "pt_ot_chiro": 35
+      },
+      "preventive_no_cost_share": true
+    },
+    "cost_sharing_out_of_network": {
+      "deductible_individual": 5000,
+      "deductible_family": 10000,
+      "coinsurance_pct": 0.4,
+      "balance_billing_risk": true
+    },
+    "pharmacy": {
+      "tiers": [
+        {
+          "tier": 1,
+          "name": "Preferred Generic",
+          "retail_copay": 10,
+          "mail_copay": 30,
+          "deductible_applies": false
+        },
+        {
+          "tier": 2,
+          "name": "Non-Preferred Generic",
+          "retail_copay": 18,
+          "mail_copay": 54,
+          "deductible_applies": false
+        },
+        {
+          "tier": 3,
+          "name": "Preferred Brand",
+          "retail_copay": 35,
+          "mail_copay": 105,
+          "deductible_applies": true
+        },
+        {
+          "tier": 4,
+          "name": "Non-Preferred Brand",
+          "coinsurance_pct": 0.25,
+          "retail_cap": 150,
+          "mail_cap": 450
+        },
+        {
+          "tier": 5,
+          "name": "Specialty",
+          "coinsurance_pct": 0.3,
+          "cap": 250,
+          "specialty_pharmacy_required": true
+        }
+      ],
+      "utilization_management": ["PA", "ST", "QL"]
+    },
+    "authorization_rules": {
+      "inpatient": true,
+      "advanced_imaging": true,
+      "dme_over_amount": 500,
+      "home_health": true,
+      "skilled_nursing": true,
+      "selected_specialty_meds": true,
+      "referrals_required": false
+    },
+    "service_limits": {
+      "pt_ot_combined_visits_per_year": 40,
+      "chiropractic_visits_per_year": 20
+    },
+    "examples": [
+      {
+        "name": "PCP visit",
+        "allowed": 140,
+        "you_pay": 25,
+        "notes": "Copay; deductible waived"
+      },
+      {
+        "name": "MRI",
+        "allowed": 1200,
+        "you_pay": 240,
+        "notes": "20% after deductible"
+      },
+      {
+        "name": "Inpatient stay",
+        "allowed": 10000,
+        "you_pay": 4000,
+        "notes": "Deductible + coinsurance"
+      },
+      {
+        "name": "OON specialist",
+        "billed": 300,
+        "allowed": 180,
+        "you_pay": 72,
+        "balance_bill_possible": 120
+      }
+    ],
+    "exclusions": [
+      "Cosmetic services/surgery (non-accident)",
+      "Infertility treatment beyond diagnostics",
+      "Experimental/investigational services",
+      "Adult vision hardware unless stated",
+      "Adult hearing aids unless stated",
+      "Long-term custodial care"
+    ],
+    "contact": {
+      "customer_service_phone": "800-555-0199",
+      "nurse_line": "800-555-0145",
+      "member_portal": "https://member.aetna-sample.com"
+    }
+  },
+  "sections": [
+    {
+      "heading": "Document Header",
+      "body": "Title: Aetna PPO Silver 2500 \u2014 Policy Certificate \u2014 2025 Plan Year \nIssuer: Aetna \nDocument ID: aetna-sample-2025-09-19-83249bc8\nDocument Type: Policy Certificate\nEdition Date: 2025-01-01\nEffective Date: 2025-01-01\nExpiration Date: 2025-12-31\nPolicy Number: PLN-AXS-529184\nGroup Number: GRP-20417"
+    },
+    {
+      "heading": "Member & Plan Information",
+      "body": "Subscriber: Randall Ridley\nMember ID: Q123456789\nDependents:\n  - Ava Ridley (Child)\nPlan Type: PPO\nMetal Level: Silver\nNetwork: Aetna Open Choice PPO\nService Area: United States\nCustomer Service: 800-555-0199\nNurse Line (24/7): 800-555-0145\nMember Portal: https://member.aetna-sample.com"
+    },
+    {
+      "heading": "At-a-Glance Coverage (In-Network vs Out-of-Network)",
+      "body": "In-Network:\n  - Individual Deductible: $2,500\n  - Family Deductible: $5,000\n  - Individual Out-of-Pocket (OOP) Max: $8,500\n  - Family OOP Max: $17,000\n  - Coinsurance (unless noted): 20% after deductible\n  - Preventive Care: 100% covered, no deductible\nOut-of-Network:\n  - Individual Deductible: $5,000\n  - Family Deductible: $10,000\n  - Coinsurance: 40% after OON deductible (subject to allowed amount)\n  - Member may be balance billed above allowed amount"
+    },
+    {
+      "heading": "Common Services & Cost Sharing (In-Network)",
+      "body": "Primary Care Visit (CPT 99213/99214): $25 copay, deductible waived\nSpecialist Visit: $50 copay, deductible waived\nPreventive Care/Wellness: Covered 100%, deductible waived\nUrgent Care: $75 copay, then 20% coinsurance if services beyond visit fee\nEmergency Room: $350 copay, then 20% coinsurance after deductible (copay waived if admitted)\nInpatient Hospital: 20% coinsurance after deductible\nOutpatient Surgery: 20% coinsurance after deductible\nDiagnostic Lab (routine): $10 copay, deductible waived\nX-ray & Advanced Imaging (CT/MRI/PET): 20% coinsurance after deductible\nPhysical/Occupational Therapy: $35 copay per visit; 40 visit combined limit per calendar year\nChiropractic Care: $35 copay per visit; 20 visit limit per year\nDurable Medical Equipment (DME): 20% coinsurance after deductible; pre-auth may apply over $500\nMaternity: Prenatal visits 100% covered; Delivery & inpatient stay 20% after deductible\nMental Health/Substance Use (Outpatient): $25 copay per therapy session; psychiatry $50 copay\nMental Health/Substance Use (Inpatient): 20% coinsurance after deductible\nTelehealth PCP/Behavioral: $0-$25 copay depending on service; deductible waived"
+    },
+    {
+      "heading": "Pharmacy Benefits (Retail 30-day / Mail 90-day)",
+      "body": "Tier 1 (Preferred Generic): $10 retail / $30 mail; deductible waived\nTier 2 (Non-Preferred Generic): $18 retail / $54 mail; deductible waived\nTier 3 (Preferred Brand): $35 retail / $105 mail; subject to deductible if not met\nTier 4 (Non-Preferred Brand): 25% coinsurance up to $150 per script retail / up to $450 mail\nTier 5 (Specialty): 30% coinsurance up to $250 per script; must use designated specialty pharmacy\nNotes: Some drugs require Prior Authorization (PA), Step Therapy (ST), or Quantity Limits (QL).\nExamples requiring PA/ST/QL (illustrative): GLP-1s, specialty biologics, high-cost oncology meds."
+    },
+    {
+      "heading": "Prior Authorization & Notification",
+      "body": "Prior authorization is required for, but not limited to:\n  \u2022 Inpatient admissions (medical, surgical, behavioral health)\n  \u2022 Certain outpatient surgeries and advanced imaging (CT/MRI/PET)\n  \u2022 DME purchases/rentals over $500\n  \u2022 Home health & skilled nursing facility\n  \u2022 Selected specialty medications\nFailure to obtain authorization may result in reduced or denied coverage.\nReferrals: Not required for PPO, but seeing in-network providers saves money."
+    },
+    {
+      "heading": "Exclusions & Limitations (Partial List)",
+      "body": "Not covered or limited:\n  \u2022 Cosmetic services and surgeries (unless medically necessary from an accident)\n  \u2022 Infertility treatment beyond basic diagnostics\n  \u2022 Experimental or investigational services\n  \u2022 Dental services except for accidental injury to sound natural teeth\n  \u2022 Vision hardware for adults (frames/lenses) unless stated otherwise\n  \u2022 Hearing aids (limited to 1 pair every 36 months for children under 18; adults excluded unless stated)\n  \u2022 Long-term custodial care\n  \u2022 Services not medically necessary or not covered under plan terms\nSee full exclusions section for complete list."
+    },
+    {
+      "heading": "Out-of-Network Rules",
+      "body": "Out-of-network services are covered at reduced levels after the OON deductible.\nMember may be responsible for any billed charges exceeding the Aetna allowed amount (balance billing).\nEmergency care at any facility is treated as in-network for cost-sharing purposes; balance billing protections may vary by state."
+    },
+    {
+      "heading": "Claims, Appeals & Grievances",
+      "body": "Filing a Claim: In-network providers bill Aetna directly. OON member-submitted claims due within 180 days of service.\nExplanation of Benefits (EOB): Issued after claim adjudication; viewable on member portal.\nFirst-Level Appeal: Must be submitted within 180 days of adverse determination. Decision typically within 30 days (pre-service) or 60 days (post-service).\nSecond-Level Appeal/External Review: Available for eligible denials; timelines vary by state law.\nComplaint/Grievance: Contact Customer Service or submit via portal.\nMailing Address: Aetna Claims, PO Box 55555, Hartford, CT 06156"
+    },
+    {
+      "heading": "Coordination of Benefits (COB)",
+      "body": "If you have other coverage, benefits are coordinated. Primary vs secondary payer rules follow NAIC model guidelines.\nMembers must notify Aetna of other insurance to avoid delays."
+    },
+    {
+      "heading": "Definitions (Glossary)",
+      "body": "Deductible: Amount you pay for covered services before the plan starts to pay.\nCoinsurance: Your share of costs (percentage) after deductible is met.\nCopay: Flat dollar amount for certain services.\nAllowed Amount: Maximum plan payment for a covered service.\nOut-of-Pocket Maximum: Most you pay in a plan year for covered in-network services; then the plan pays 100%."
+    },
+    {
+      "heading": "Examples of How You Pay",
+      "body": "Example 1 \u2014 PCP Visit (in-network):\n  Allowed amount: $140; Copay: $25 (deductible waived). You pay $25.\nExample 2 \u2014 MRI (in-network) after deductible met:\n  Allowed: $1,200; Coinsurance 20% \u2192 You pay $240.\nExample 3 \u2014 Inpatient stay (in-network) with deductible remaining:\n  Allowed: $10,000; Deductible $2,500 + 20% of remaining $7,500 ($1,500) \u2192 You pay $4,000 total.\nExample 4 \u2014 OON Specialist Visit:\n  Billed: $300; Allowed: $180; OON coinsurance 40% after OON deductible \u2192 You pay 40% of $180 = $72 + any balance bill ($120)."
+    },
+    {
+      "heading": "Coding Reference (Illustrative)",
+      "body": "Common CPT/HCPCS and Coverage (in-network):\n  \u2022 99213 \u2014 Established patient office visit: $25 copay; deductible waived\n  \u2022 97110 \u2014 PT therapeutic exercises: $35 copay per visit; annual limit applies\n  \u2022 70450 \u2014 CT head/brain without contrast: 20% coinsurance after deductible\n  \u2022 J1885 \u2014 Injection, ketorolac tromethamine: subject to visit cost share\nNDC examples for pharmacy tiers are available in formulary references; coverage rules may require PA/ST/QL."
+    },
+    {
+      "heading": "Notices & Disclaimers",
+      "body": "It is not an official Aetna document and confers no coverage. Contact your actual plan documents and ID card for binding terms.\nBrand names are used nominatively for illustrative purposes only."
+    }
+  ],
+  "qa_hints": [
+    {
+      "question": "What is my in-network deductible?",
+      "answer_pointer": "At-a-Glance Coverage (In-Network vs Out-of-Network)"
+    },
+    {
+      "question": "Do I need prior auth for MRI?",
+      "answer_pointer": "Prior Authorization & Notification"
+    },
+    {
+      "question": "How much is a PCP visit?",
+      "answer_pointer": "Common Services & Cost Sharing (In-Network)"
+    },
+    {
+      "question": "What is the Tier 1 copay?",
+      "answer_pointer": "Pharmacy Benefits (Retail 30-day / Mail 90-day)"
+    },
+    {
+      "question": "Are chiropractic visits limited?",
+      "answer_pointer": "Common Services & Cost Sharing (In-Network)"
+    },
+    {
+      "question": "How do I appeal a denial?",
+      "answer_pointer": "Claims, Appeals & Grievances"
+    },
+    {
+      "question": "What is out-of-network coinsurance?",
+      "answer_pointer": "At-a-Glance Coverage (In-Network vs Out-of-Network)"
+    }
+  ],
+  "text": "## Document Header\nTitle: Aetna PPO Silver 2500 \u2014 Policy Certificate \u2014 2025 Plan Year \nIssuer: Aetna \nDocument ID: aetna-sample-2025-09-19-83249bc8\nDocument Type: Policy Certificate\nEdition Date: 2025-01-01\nEffective Date: 2025-01-01\nExpiration Date: 2025-12-31\nPolicy Number: PLN-AXS-529184\nGroup Number: GRP-20417\n\n## Member & Plan Information\nSubscriber: Randall Ridley\nMember ID: Q123456789\nDependents:\n  - Ava Ridley (Child)\nPlan Type: PPO\nMetal Level: Silver\nNetwork: Aetna Open Choice PPO\nService Area: United States\nCustomer Service: 800-555-0199\nNurse Line (24/7): 800-555-0145\nMember Portal: https://member.aetna-sample.com\n\n## At-a-Glance Coverage (In-Network vs Out-of-Network)\nIn-Network:\n  - Individual Deductible: $2,500\n  - Family Deductible: $5,000\n  - Individual Out-of-Pocket (OOP) Max: $8,500\n  - Family OOP Max: $17,000\n  - Coinsurance (unless noted): 20% after deductible\n  - Preventive Care: 100% covered, no deductible\nOut-of-Network:\n  - Individual Deductible: $5,000\n  - Family Deductible: $10,000\n  - Coinsurance: 40% after OON deductible (subject to allowed amount)\n  - Member may be balance billed above allowed amount\n\n## Common Services & Cost Sharing (In-Network)\nPrimary Care Visit (CPT 99213/99214): $25 copay, deductible waived\nSpecialist Visit: $50 copay, deductible waived\nPreventive Care/Wellness: Covered 100%, deductible waived\nUrgent Care: $75 copay, then 20% coinsurance if services beyond visit fee\nEmergency Room: $350 copay, then 20% coinsurance after deductible (copay waived if admitted)\nInpatient Hospital: 20% coinsurance after deductible\nOutpatient Surgery: 20% coinsurance after deductible\nDiagnostic Lab (routine): $10 copay, deductible waived\nX-ray & Advanced Imaging (CT/MRI/PET): 20% coinsurance after deductible\nPhysical/Occupational Therapy: $35 copay per visit; 40 visit combined limit per calendar year\nChiropractic Care: $35 copay per visit; 20 visit limit per year\nDurable Medical Equipment (DME): 20% coinsurance after deductible; pre-auth may apply over $500\nMaternity: Prenatal visits 100% covered; Delivery & inpatient stay 20% after deductible\nMental Health/Substance Use (Outpatient): $25 copay per therapy session; psychiatry $50 copay\nMental Health/Substance Use (Inpatient): 20% coinsurance after deductible\nTelehealth PCP/Behavioral: $0-$25 copay depending on service; deductible waived\n\n## Pharmacy Benefits (Retail 30-day / Mail 90-day)\nTier 1 (Preferred Generic): $10 retail / $30 mail; deductible waived\nTier 2 (Non-Preferred Generic): $18 retail / $54 mail; deductible waived\nTier 3 (Preferred Brand): $35 retail / $105 mail; subject to deductible if not met\nTier 4 (Non-Preferred Brand): 25% coinsurance up to $150 per script retail / up to $450 mail\nTier 5 (Specialty): 30% coinsurance up to $250 per script; must use designated specialty pharmacy\nNotes: Some drugs require Prior Authorization (PA), Step Therapy (ST), or Quantity Limits (QL).\nExamples requiring PA/ST/QL (illustrative): GLP-1s, specialty biologics, high-cost oncology meds.\n\n## Prior Authorization & Notification\nPrior authorization is required for, but not limited to:\n  \u2022 Inpatient admissions (medical, surgical, behavioral health)\n  \u2022 Certain outpatient surgeries and advanced imaging (CT/MRI/PET)\n  \u2022 DME purchases/rentals over $500\n  \u2022 Home health & skilled nursing facility\n  \u2022 Selected specialty medications\nFailure to obtain authorization may result in reduced or denied coverage.\nReferrals: Not required for PPO, but seeing in-network providers saves money.\n\n## Exclusions & Limitations (Partial List)\nNot covered or limited:\n  \u2022 Cosmetic services and surgeries (unless medically necessary from an accident)\n  \u2022 Infertility treatment beyond basic diagnostics\n  \u2022 Experimental or investigational services\n  \u2022 Dental services except for accidental injury to sound natural teeth\n  \u2022 Vision hardware for adults (frames/lenses) unless stated otherwise\n  \u2022 Hearing aids (limited to 1 pair every 36 months for children under 18; adults excluded unless stated)\n  \u2022 Long-term custodial care\n  \u2022 Services not medically necessary or not covered under plan terms\nSee full exclusions section for complete list.\n\n## Out-of-Network Rules\nOut-of-network services are covered at reduced levels after the OON deductible.\nMember may be responsible for any billed charges exceeding the Aetna allowed amount (balance billing).\nEmergency care at any facility is treated as in-network for cost-sharing purposes; balance billing protections may vary by state.\n\n## Claims, Appeals & Grievances\nFiling a Claim: In-network providers bill Aetna directly. OON member-submitted claims due within 180 days of service.\nExplanation of Benefits (EOB): Issued after claim adjudication; viewable on member portal.\nFirst-Level Appeal: Must be submitted within 180 days of adverse determination. Decision typically within 30 days (pre-service) or 60 days (post-service).\nSecond-Level Appeal/External Review: Available for eligible denials; timelines vary by state law.\nComplaint/Grievance: Contact Customer Service or submit via portal.\nMailing Address: Aetna Claims, PO Box 55555, Hartford, CT 06156\n\n## Coordination of Benefits (COB)\nIf you have other coverage, benefits are coordinated. Primary vs secondary payer rules follow NAIC model guidelines.\nMembers must notify Aetna of other insurance to avoid delays.\n\n## Definitions (Glossary)\nDeductible: Amount you pay for covered services before the plan starts to pay.\nCoinsurance: Your share of costs (percentage) after deductible is met.\nCopay: Flat dollar amount for certain services.\nAllowed Amount: Maximum plan payment for a covered service.\nOut-of-Pocket Maximum: Most you pay in a plan year for covered in-network services; then the plan pays 100%.\n\n## Examples of How You Pay\nExample 1 \u2014 PCP Visit (in-network):\n  Allowed amount: $140; Copay: $25 (deductible waived). You pay $25.\nExample 2 \u2014 MRI (in-network) after deductible met:\n  Allowed: $1,200; Coinsurance 20% \u2192 You pay $240.\nExample 3 \u2014 Inpatient stay (in-network) with deductible remaining:\n  Allowed: $10,000; Deductible $2,500 + 20% of remaining $7,500 ($1,500) \u2192 You pay $4,000 total.\nExample 4 \u2014 OON Specialist Visit:\n  Billed: $300; Allowed: $180; OON coinsurance 40% after OON deductible \u2192 You pay 40% of $180 = $72 + any balance bill ($120).\n\n## Coding Reference (Illustrative)\nCommon CPT/HCPCS and Coverage (in-network):\n  \u2022 99213 \u2014 Established patient office visit: $25 copay; deductible waived\n  \u2022 97110 \u2014 PT therapeutic exercises: $35 copay per visit; annual limit applies\n  \u2022 70450 \u2014 CT head/brain without contrast: 20% coinsurance after deductible\n  \u2022 J1885 \u2014 Injection, ketorolac tromethamine: subject to visit cost share\nNDC examples for pharmacy tiers are available in formulary references; coverage rules may require PA/ST/QL.\n\n## Notices & Disclaimers\n.\nIt is not an official Aetna document and confers no coverage. Contact your actual plan documents and ID card for binding terms.\nBrand names are used nominatively for illustrative purposes only."
+}
