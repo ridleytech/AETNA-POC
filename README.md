@@ -4,6 +4,8 @@ A proof-of-concept Conversational AI Chatbot Application built for Aetna, demons
 
 ---
 
+[![Demo video](screenshots/bot.png)](https://youtube.com/shorts/Lt-0qcEQRBE)
+
 ## 🧩 Project Structure
 
 ### Watson Discovery Integration
