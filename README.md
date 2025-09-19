@@ -7,7 +7,7 @@ A proof-of-concept Conversational AI Chatbot Application built for Aetna, demons
 ## 🎥 Demo Video
 
 <a href="https://youtube.com/shorts/Lt-0qcEQRBE">
-  <img src="screenshots/bot.png" alt="Watch the demo" width="500">
+  <img src="screenshots/bot.png" alt="Watch the demo" width="300">
 </a>
 
 ## 🧩 Project Structure
