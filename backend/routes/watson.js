@@ -89,13 +89,38 @@ const sendDiscoveryMessage = async (req, res) => {
 
   let data = JSON.stringify({
     natural_language_query: utterance,
+    filter: 'document_type::"policy_certificate"',
     count: 3,
-    return: ["title", "text", "url", "media", "tags", "body_text"],
+    return: [
+      "title",
+      "issuer",
+      "policy_number",
+      "group_number",
+      "effective_date",
+      "expiration_date",
+      "sections",
+      "structured",
+      "text",
+    ],
+    spelling_suggestions: true,
+    highlight: true,
     passages: {
       enabled: true,
-      fields: ["title"],
+      fields: [
+        "text",
+        "sections.body",
+        "sections.heading",
+        "structured.plan.*",
+        "structured.cost_sharing_in_network.*",
+        "structured.cost_sharing_out_of_network.*",
+        "structured.pharmacy.*",
+        "structured.authorization_rules.*",
+        "structured.service_limits.*",
+        "structured.examples.*",
+        "structured.contact.*",
+      ],
       find_answers: true,
-      characters: 250,
+      characters: 300,
     },
     table_results: {
       enabled: false,
@@ -117,6 +142,8 @@ const sendDiscoveryMessage = async (req, res) => {
     .request(config)
     .then((response) => {
       var botResponse;
+
+      console.log("Discovery response:", response.data);
 
       if (entities[0] && entities[0].entity == "insurance_item") {
         if (entities[0].value == "in_network_deductible") {
